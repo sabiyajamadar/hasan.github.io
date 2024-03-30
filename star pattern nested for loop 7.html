@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> for loop </title>
+        <style>
+            body{
+                color: lightseagreen;
+                font-size: 30px;
+                line-height: 0.6;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+           let x=10;
+                for(let i=x; i>=1; i--){
+                    for(let k=1; k<=x-i; k++){
+                        document.write("&nbsp;&nbsp;");
+                    }
+                    for(let j=1; j<=i; j++){
+                        document.write("*")
+                    }
+                    for(let l=1; l<=i-1; l++){
+                        document.write("*");
+                    }
+                    document.write("<br/>")
+                }
+                let m = 1;
+         for(let i=1; i<=x; i++){
+               
+             for(let k=1; k<=x-i; k++){
+                document.write("&nbsp;&nbsp;")
+              }
+              for(let j=1; j<=m; j++){
+                document.write("*");
+              }
+             document.write("<br/>");
+             m=m+2;
+         }
+        </script>
+    </body>
+</html>
